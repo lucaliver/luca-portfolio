@@ -6,19 +6,90 @@
     <title>HTML Cheatsheet</title>
 </head>
 <body>
-    <h1>Header 1</h1>
-    <h2>Header 2</h2>
-    <h6>Header 6</h6>
-    
-    <p>
-        Questo è un paragrafo. 
-        Ogni comando in html è un "elemento" ed è costituito da un tag d'apertura, 
-        un tag di chiusura e in mezzo il contenuto.
-        Nel tag possono esserci degli attributi i quali hanno un nome e un valore.
-    </p>
-    Oppure posso usare BR <br> per andare a capo.
+    <style>
+        :root {
+            --twitter-color: #1DA1F2;
+            --follow-color: rgb(77, 77, 230);
+            --seconds-animation: 0.4s;
+}
+
+        .yt-button {                        /* The dot is used to indicate a class */
+            background-color: #ff0000;
+            color: white;
+            border: none;
+            height: 35px;
+            width: 105;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 8px;
+            margin: 4px;
+            font-weight: bold;
+            transition: opacity 0.7s;
+        }
+        .yt-button:hover {                  /* This is a pseudo-class*/
+            opacity: 0.6;
+        }
+        .yt-button:active {
+            opacity: 0.4;
+        }
+
+        .follow-button {
+            background-color: white;
+            border-color: var(--follow-color);
+            border-style: solid;
+            border-width: 1.5px;
+            border-radius: 4px;
+            color: var(--follow-color);
+            height: 35px;
+            margin: 4px;
+            cursor: pointer;
+            transition: background-color var(--seconds-animation),
+             color var(--seconds-animation), 
+             border-color var(--seconds-animation);
+        }
+        .follow-button:hover {
+            background-color: var(--follow-color);
+            border-color: white;
+            color: white;
+        }
+        .follow-button:active {
+            opacity: 0.7;
+        }
+
+        .tweet-button {
+            background-color: var(--twitter-color);
+            color: white;
+            border: none;
+            height: 36px;
+            width: 80px;
+            border-radius: 18px;
+            font-weight: bold;
+            font-size: 15px;
+            margin: 4px;
+            cursor: pointer;
+            transition: box-shadow var(--seconds-animation);
+        }
+        .tweet-button:hover {
+            box-shadow: 6px 6px 9px rgba(0, 0, 0, 0.25);
+        }
+
+        .my-link {
+            color: rgb(0, 0, 167);
+            transition: color var(--seconds-animation);
+        }
+        .my-link:hover {
+            color: rgb(205, 134, 3);
+        }
+    </style>
+
+    <h1>Luca Liver's website</h1>
+
     <br>
-    <button>Bottone inutile</button>
+
+    <button class="yt-button">YouTube</button>
+    <button class="follow-button">FOLLOW</button>
+    <button class="tweet-button">Twitter</button>
+
     <br>
 
     <b>B per bold (grassetto).</b>
@@ -32,16 +103,12 @@
     <strong>STRONG per le parole importanti, ma di base è grassetto.</strong>
     <br>
     <br>
-    <i>"a href"</i> aggiunge un <a href="https://htmlcheatsheet.com/">link</a>.
+    <i>"a href"</i> aggiunge un <a class="my-link" href="https://htmlcheatsheet.com/">link</a>.
     <br>
-    Con l'attributo <i>target="_blank"</i> il <a href="https://htmlcheatsheet.com/" target="_blank">link</a> verrà aperto in una nuova scheda.
+    Con l'attributo <i>target="_blank"</i> il <a class="my-link" href="https://htmlcheatsheet.com/" target="_blank">link</a> verrà aperto in una nuova scheda.
     <br>
     <br>
 
-    Puoi aggiungere immmagini tramite link o tramite file.
-    <br>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Roma_dall%27aereo.JPG/225px-Roma_dall%27aereo.JPG">
-    <br>
     <img src="Australian-Sheperd.jpg">
     <br>
     <br>
@@ -56,48 +123,6 @@
         <li>名誉, Meiyo: Onore.</li>
         <li>忠義, Chugi: Dovere e Lealtà</li>
     </ol>
-    Ovviamente le liste possono essere innestate.
     <br>
-    <br>
-
-    <table border="1" cellpadding="10" cellspacing="0">
-        <tr>
-           <th></th>
-           <th>Month</th>
-           <th>Rent</th>
-           <th colspan="2">Utilities</th><!-- This cell will span 2 columns in the row below it -->
-           <th>Groceries</th>
-           <th>Eating Out</th>
-           <th>Entertainment</th>
-        </tr>
-         <tr>
-           <td rowspan="3">Fall</td><!-- this cell will span 3 rows, June, July, & August -->
-           <td>June</td>
-           <td>$1500</td>
-           <td>$100</td><!-- The $100 and $50 cells will be under the Utilities cell-->
-           <td>$50</td>
-           <td>$350</td>
-           <td>$100</td>
-           <td>$50</td>
-        </tr>
-        <tr>
-           <td>July</td>
-           <td>$1500</td>
-           <td>$100</td>
-           <td>$50</td>
-           <td>$350</td>
-           <td>$100</td>
-           <td>$50</td>
-        </tr>
-        <tr>
-           <td>August</td>
-           <td>$1500</td>
-           <td>$100</td>
-           <td>$50</td>
-           <td>$350</td>
-           <td>$100</td>
-           <td>$50</td>
-        </tr>
-     </table>
 </body>
 </html>
