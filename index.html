@@ -11,26 +11,29 @@
             --follow-color: rgb(39, 39, 39);
             --seconds-animation: 0.4s;
         }
+
+        .all-buttons {
+            padding: 10px 15px;
+            cursor: pointer;
+        }
         
-        .yt-button {                        /* The dot is used to indicate a class */
+        .all-buttons.yt {                        /* The dot is used to indicate a class */
             background-color: #ff0000;
             color: white;
             border: none;
-            padding: 10px 15px;
             border-radius: 4px;
-            cursor: pointer;
             margin: 4px;
             font-weight: bold;
             transition: opacity 0.7s;
         }
-        .yt-button:hover {                  /* This is a pseudo-class*/
+        .all-buttons.yt:hover {                  /* This is a pseudo-class*/
             opacity: 0.4;
         }
-        .yt-button:active {
+        .all-buttons.yt:active {
             color:rgb(101, 101, 101);
         }
         
-        .follow-button {
+        .all-buttons.follow {
             background-color: white;
             border-color: var(--follow-color);
             border-style: solid;
@@ -45,16 +48,16 @@
             color var(--seconds-animation), 
             border-color var(--seconds-animation);
         }
-        .follow-button:hover {
+        .all-buttons.follow:hover {
             background-color: var(--follow-color);
             border-color: white;
             color: white;
         }
-        .follow-button:active {
+        .all-buttons.follow:active {
             opacity: 0.7;
         }
         
-        .tweet-button {
+        .all-buttons.tweet {
             background-color: var(--twitter-color);
             color: white;
             border: none;
@@ -66,10 +69,10 @@
             cursor: pointer;
             transition: box-shadow var(--seconds-animation);
         }
-        .tweet-button:hover {
-            box-shadow: 6px 6px 9px rgba(0, 0, 0, 0.25);
+        .all-buttons.tweet:hover {
+            box-shadow: 6px 4px 9px rgba(0, 0, 0, 0.25);
         }
-        .tweet-button:active {
+        .all-buttons.tweet:active {
             opacity: 0.7;
         }
         
@@ -88,25 +91,18 @@
 </head>
 <body>
     <h1 class="my-header">Luca's Portfolio</h1>
-    Test
-    <br>
     
-    <button class="yt-button">YouTube</button>
-    <button class="follow-button">FOLLOW</button>
-    <button class="tweet-button">Twitter</button>
-    
+    <button class="all-buttons yt">YouTube</button>
+    <button class="all-buttons follow">FOLLOW</button>
+    <button class="all-buttons tweet">Twitter</button>
     <br>
     <br>
     
-    <i>"a href"</i> aggiunge un <a class="my-link" href="https://htmlcheatsheet.com/">link</a>.
-    <br>
-    Con l'attributo <i>target="_blank"</i> il <a class="my-link" href="https://htmlcheatsheet.com/" target="_blank">link</a> verrà aperto in una nuova scheda.
-    
+    Questo è un <a class="my-link" href="https://htmlcheatsheet.com/">link</a>.
     <br>
     <br>
     
     <img src="Australian-Sheperd.jpg">
-    
     <br>
     <br>
     
