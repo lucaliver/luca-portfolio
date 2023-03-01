@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="uft-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HTML Cheatsheet</title>
-</head>
-<body>
+    <title>Luca's Portfolio</title>
+    
     <style>
         :root {
             --twitter-color: #1DA1F2;
             --follow-color: rgb(39, 39, 39);
             --seconds-animation: 0.4s;
-}
-
+        }
+        
         .yt-button {                        /* The dot is used to indicate a class */
             background-color: #ff0000;
             color: white;
@@ -25,12 +24,12 @@
             transition: opacity 0.7s;
         }
         .yt-button:hover {                  /* This is a pseudo-class*/
-            opacity: 0.6;
-        }
-        .yt-button:active {
             opacity: 0.4;
         }
-
+        .yt-button:active {
+            color:rgb(101, 101, 101);
+        }
+        
         .follow-button {
             background-color: white;
             border-color: var(--follow-color);
@@ -43,8 +42,8 @@
             padding: 10px 15px;
             cursor: pointer;
             transition: background-color var(--seconds-animation),
-             color var(--seconds-animation), 
-             border-color var(--seconds-animation);
+            color var(--seconds-animation), 
+            border-color var(--seconds-animation);
         }
         .follow-button:hover {
             background-color: var(--follow-color);
@@ -54,7 +53,7 @@
         .follow-button:active {
             opacity: 0.7;
         }
-
+        
         .tweet-button {
             background-color: var(--twitter-color);
             color: white;
@@ -70,7 +69,10 @@
         .tweet-button:hover {
             box-shadow: 6px 6px 9px rgba(0, 0, 0, 0.25);
         }
-
+        .tweet-button:active {
+            opacity: 0.7;
+        }
+        
         .my-link {
             color: rgb(0, 0, 167);
             transition: color var(--seconds-animation);
@@ -78,30 +80,37 @@
         .my-link:hover {
             color: rgb(205, 134, 3);
         }
+
+        .my-header {
+            text-align: center;
+        }
     </style>
-
-    <h1>Luca Liver's website</h1>
-
+</head>
+<body>
+    <h1 class="my-header">Luca's Portfolio</h1>
+    
     <br>
-
+    
     <button class="yt-button">YouTube</button>
     <button class="follow-button">FOLLOW</button>
     <button class="tweet-button">Twitter</button>
-
+    
     <br>
     <br>
     
     <i>"a href"</i> aggiunge un <a class="my-link" href="https://htmlcheatsheet.com/">link</a>.
     <br>
     Con l'attributo <i>target="_blank"</i> il <a class="my-link" href="https://htmlcheatsheet.com/" target="_blank">link</a> verrà aperto in una nuova scheda.
+    
     <br>
     <br>
-
+    
     <img src="Australian-Sheperd.jpg">
+    
     <br>
     <br>
-
-    Puoi fare liste numerate (ordered) con OL o non numerate (unordered) con UL, ad esempio ecco le 7 virtù del Bushido:
+    
+    Le 7 virtù del Bushido:
     <ol>
         <li>義, Gi: Onestà e Giustizia.</li>
         <li>勇, Yu: Eroico Coraggio.</li>
