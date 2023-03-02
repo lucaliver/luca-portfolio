@@ -11,19 +11,19 @@
             --follow-color: rgb(39, 39, 39);
             --seconds-animation: 0.4s;
         }
-
+        
         body {
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: Helvetica;
             font-size: medium; 
         }
-
-        button {
+        
+        button {                        /* Button is an element selector */
             padding: 10px 15px;
             margin: 4px;
             cursor: pointer;
         }
         
-        .yt {                        /* The dot is used to indicate a class */
+        .yt {                           /* This is a class selector */
             background-color: #ff0000;
             color: white;
             border: none;
@@ -31,7 +31,7 @@
             font-weight: bold;
             transition: opacity 0.7s;
         }
-        .yt:hover {                  /* This is a pseudo-class*/
+        .yt:hover {                     /* This is a pseudo-class*/
             opacity: 0.4;
         }
         .yt:active {
@@ -87,40 +87,60 @@
             color: rgb(205, 134, 3);
             text-decoration: underline;
         }
-
+        
         .my-header {
             text-align: center;
             font-size: 40px;
+            margin-bottom: 4px;
+        }
+
+        .subtitle {
+            color: gray;
+            text-align: center;
+            margin-top: 2px;
+            margin-bottom: 30px;
+        }
+
+        .wip-warning {
+            background-color: rgb(227, 65, 64);
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 15px;
         }
     </style>
 </head>
 <body>
     <h1 class="my-header">Luca's Portfolio</h1>
+    <p class="subtitle">A site about my life and career</p>
     
-    <button class="yt">YouTube</button>
-    <button class="follow">FOLLOW</button>
-    <button class="tweet">Twitter</button>
-    <br>
-    <br>
+    <p>
+        <button class="yt">YouTube</button>
+        <button class="follow">FOLLOW</button>
+        <button class="tweet">Twitter</button>
+    </p>
+
+    <p>
+        Le 7 virtù del <b>Bushido</b>:
+        <ol>
+            <li>義, Gi: Onestà e Giustizia.</li>
+            <li>勇, Yu: Eroico Coraggio.</li>
+            <li>仁, Jin: Compassione.</li>
+            <li>礼, Rei: Gentile Cortesia.</li>
+            <li>誠, Makoto: Completa Sincerità.</li>
+            <li>名誉, Meiyo: Onore.</li>
+            <li>忠義, Chugi: Dovere e Lealtà</li>
+        </ol>
+    </p>
     
-    <a class="my-link" href="contact-me.html">Contact me</a>
-    <br>
-    <br>
-    
-    <img src="Australian-Sheperd.jpg">
-    <br>
-    <br>
-    
-    Le 7 virtù del <b>Bushido</b>:
-    <ol>
-        <li>義, Gi: Onestà e Giustizia.</li>
-        <li>勇, Yu: Eroico Coraggio.</li>
-        <li>仁, Jin: Compassione.</li>
-        <li>礼, Rei: Gentile Cortesia.</li>
-        <li>誠, Makoto: Completa Sincerità.</li>
-        <li>名誉, Meiyo: Onore.</li>
-        <li>忠義, Chugi: Dovere e Lealtà</li>
-    </ol>
-    <br>
+    <p>
+        <a class="my-link" href="contact-me.html">Contact me</a>
+    </p>
+
+<!--     <img src="Australian-Sheperd.jpg"> -->
+
+    <p class="wip-warning">
+        This site is <u>work in progress</u>.
+    </p>
 </body>
 </html>
