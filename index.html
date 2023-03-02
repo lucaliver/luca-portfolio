@@ -17,28 +17,28 @@
             font-size: medium; 
         }
 
-        .all-buttons {
+        button {
             padding: 10px 15px;
+            margin: 4px;
             cursor: pointer;
         }
         
-        .all-buttons.yt {                        /* The dot is used to indicate a class */
+        .yt {                        /* The dot is used to indicate a class */
             background-color: #ff0000;
             color: white;
             border: none;
             border-radius: 4px;
-            margin: 4px;
             font-weight: bold;
             transition: opacity 0.7s;
         }
-        .all-buttons.yt:hover {                  /* This is a pseudo-class*/
+        .yt:hover {                  /* This is a pseudo-class*/
             opacity: 0.4;
         }
-        .all-buttons.yt:active {
+        .yt:active {
             color:rgb(101, 101, 101);
         }
         
-        .all-buttons.follow {
+        .follow {
             background-color: white;
             border-color: var(--follow-color);
             border-style: solid;
@@ -46,60 +46,60 @@
             border-radius: 4px;
             color: var(--follow-color);
             font-weight: bold;
-            margin: 4px;
-            padding: 10px 15px;
             cursor: pointer;
             transition: background-color var(--seconds-animation),
             color var(--seconds-animation), 
             border-color var(--seconds-animation);
         }
-        .all-buttons.follow:hover {
+        .follow:hover {
             background-color: var(--follow-color);
             border-color: white;
             color: white;
         }
-        .all-buttons.follow:active {
+        .follow:active {
             opacity: 0.7;
         }
         
-        .all-buttons.tweet {
+        .tweet {
             background-color: var(--twitter-color);
             color: white;
             border: none;
-            padding: 10px 15px;
             border-radius: 18px;
             font-weight: bold;
             font-size: 15px;
-            margin: 4px;
             cursor: pointer;
             transition: box-shadow var(--seconds-animation);
         }
-        .all-buttons.tweet:hover {
+        .tweet:hover {
             box-shadow: 6px 4px 9px rgba(0, 0, 0, 0.25);
         }
-        .all-buttons.tweet:active {
+        .tweet:active {
             opacity: 0.7;
         }
         
         .my-link {
             color: rgb(0, 0, 167);
-            transition: color var(--seconds-animation);
+            text-decoration: none;
+            transition: color var(--seconds-animation),
+            text-decoration var(--seconds-animation);
         }
         .my-link:hover {
             color: rgb(205, 134, 3);
+            text-decoration: underline;
         }
 
         .my-header {
             text-align: center;
+            font-size: 40px;
         }
     </style>
 </head>
 <body>
     <h1 class="my-header">Luca's Portfolio</h1>
     
-    <button class="all-buttons yt">YouTube</button>
-    <button class="all-buttons follow">FOLLOW</button>
-    <button class="all-buttons tweet">Twitter</button>
+    <button class="yt">YouTube</button>
+    <button class="follow">FOLLOW</button>
+    <button class="tweet">Twitter</button>
     <br>
     <br>
     
@@ -111,7 +111,7 @@
     <br>
     <br>
     
-    Le 7 virtù del Bushido:
+    Le 7 virtù del <b>Bushido</b>:
     <ol>
         <li>義, Gi: Onestà e Giustizia.</li>
         <li>勇, Yu: Eroico Coraggio.</li>
