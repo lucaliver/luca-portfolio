@@ -4,6 +4,12 @@ button {                        /* Button is an element selector */
     cursor: pointer;
 }
 
+.my-buttons {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .yt {                           /* This is a class selector */
     background-color: #ff0000;
     color: white;

@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky; top: 0;
+    background-color: rgb(28, 28, 28);
+    color: white;
+}
+
+.header-element {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.search-bar {
+    margin-left: 20px;
+    margin-right: 10px;

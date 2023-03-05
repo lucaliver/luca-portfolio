@@ -5,10 +5,9 @@
 }
 
 body {
-    font-family: Helvetica;
+    font-family: Helvetica, Arial;
     font-size: medium; 
-    text-align: center;
-    margin: 5;
+    margin: 0;
 }
 
 .my-link {
