@@ -16,7 +16,7 @@ button {                        /* Button is an element selector */
     border: none;
     border-radius: 4px;
     font-weight: bold;
-    transition: opacity 0.7s;
+    transition: opacity 0.7s ease;
 }
 .yt:hover {                     /* This is a pseudo-class*/
     opacity: 0.4;
@@ -34,9 +34,9 @@ button {                        /* Button is an element selector */
     color: var(--follow-color);
     font-weight: bold;
     cursor: pointer;
-    transition: background-color var(--seconds-animation),
-    color var(--seconds-animation), 
-    border-color var(--seconds-animation);
+    transition: background-color var(--seconds-animation) ease,
+    color var(--seconds-animation) ease, 
+    border-color var(--seconds-animation) ease;
 }
 .follow:hover {
     background-color: var(--follow-color);
@@ -55,7 +55,7 @@ button {                        /* Button is an element selector */
     font-weight: bold;
     font-size: 15px;
     cursor: pointer;
-    transition: box-shadow var(--seconds-animation);
+    transition: box-shadow var(--seconds-animation) ease;
 }
 .tweet:hover {
     box-shadow: 6px 4px 9px rgba(0, 0, 0, 0.25);

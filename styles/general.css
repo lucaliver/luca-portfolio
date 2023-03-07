@@ -13,8 +13,8 @@ body {
 .my-link {
     color: rgb(0, 0, 167);
     text-decoration: none;
-    transition: color var(--seconds-animation),
-    text-decoration var(--seconds-animation);
+    transition: color var(--seconds-animation) ease,
+    text-decoration var(--seconds-animation) ease;
 }
 .my-link:hover {
     color: rgb(205, 134, 3);
@@ -62,6 +62,7 @@ body {
     border-radius: 4px;
     border-width: 1px;
     border-color: aliceblue;
+    transition: background-color 0.4s ease;
 }
 .submit-button:hover{
     background-color: rgb(223, 223, 223);
