@@ -4,8 +4,12 @@
     --seconds-animation: 0.4s;
 }
 
-body {
-    font-family: Helvetica, Arial;
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
+}
+
+body {font-family: 'Golos Text', sans-serif;
     font-size: medium; 
     margin: 0;
 }
@@ -23,8 +27,35 @@ body {
 
 .my-title {
     text-align: center;
-    font-size: 40px;
-    margin-bottom: 4px;
+    font-size: 50px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+
+    transition: color 0.7s ease-in;
+}
+.my-title:hover {
+    color: #dc9be4;
+}
+
+.cool-title {
+    text-align: center;
+    font-size: 120px;
+    font-weight: 950;
+    margin-bottom: 10px;
+    background: linear-gradient(to right, #07b8e4, #ad06c0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 1;
+
+    animation: fade 1s ease-in;
+}
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 .subtitle {
@@ -38,6 +69,7 @@ body {
     background-color: rgb(227, 65, 64);
     color: white;
     padding: 10px;
+    margin-bottom: 15px;
     text-align: center;
     font-size: 20px;
 }
@@ -66,4 +98,9 @@ body {
 }
 .submit-button:hover{
     background-color: rgb(223, 223, 223);
+}
+
+.my-body {
+    background-color: #121212;
+    color: white;
 }

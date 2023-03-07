@@ -3,22 +3,39 @@
     flex-direction: row;
     padding-left: 10px;
     padding-right: 10px;
-    margin-bottom: 20px;
+    margin: 0px;
     height: 50px;
+    align-items: center;
+    justify-content: space-around;
+    position: sticky; top: 0;
+    background-color: #1F1F1F;
+    color: white;
+}
+
+.header-element {
+    font-family: 'Golos Text', sans-serif;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+    transition: text-shadow 0.4s ease;
+}
+.header-element:hover {
+    text-shadow: 1px 1px 10px #07b8e453;
+    cursor: pointer;
+}
+
+.search-zone {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    margin: 0px;
     align-items: center;
     justify-content: space-around;
     position: sticky; top: 0;
     background-color: rgb(28, 28, 28);
     color: white;
-}
 
-.header-element {
-    margin-left: 10px;
-    margin-right: 10px;
-}
-.header-element:hover {
-    text-shadow: 1px 1px 10px #ff0000a1;
-    cursor: pointer;
 }
 
 .search-bar {
@@ -30,4 +47,5 @@
 .search-button {
     margin: 0px;
     padding: 1px;
+    width: 23px;
 }
