@@ -34,12 +34,14 @@ body {font-family: 'Golos Text', sans-serif;
     transition: color 0.7s ease-in;
 }
 .my-title:hover {
-    color: #dc9be4;
+    color: #d197da;
 }
 
 .cool-title {
     text-align: center;
-    font-size: 120px;
+    font-size: 12vw;
+    max-height: 90vh;
+    max-width: 90vw;
     font-weight: 950;
     margin-bottom: 10px;
     background: linear-gradient(to right, #07b8e4, #ad06c0);
@@ -72,6 +74,11 @@ body {font-family: 'Golos Text', sans-serif;
     margin-bottom: 15px;
     text-align: center;
     font-size: 20px;
+
+    transition: background-color 1s ease-out;
+}
+.wip-warning:hover {
+    background-color: rgb(193, 26, 26);
 }
 
 .feedback {
@@ -103,4 +110,9 @@ body {font-family: 'Golos Text', sans-serif;
 .my-body {
     background-color: #121212;
     color: white;
+}
+
+.cupcake-ipsum {
+    margin-left: 20px;
+    margin-right: 20px;
 }
