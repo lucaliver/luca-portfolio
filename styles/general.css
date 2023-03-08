@@ -38,12 +38,15 @@ body {font-family: 'Golos Text', sans-serif;
 }
 
 .cool-title {
+    align-items: center;
     text-align: center;
     font-size: 12vw;
     max-height: 90vh;
     max-width: 90vw;
     font-weight: 950;
     margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
     background: linear-gradient(to right, #07b8e4, #ad06c0);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
