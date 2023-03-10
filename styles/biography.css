@@ -1,10 +1,21 @@
 .info {
     text-align: center;
+    padding: 30px;
 }
 
 .bio {
-    margin-left: 20vw;
-    margin-right: 20vw;
+    min-width: 30vw;
+    padding: 5px 40px;
+    max-width: 500px;
+}
+
+.info-bio-container {
+    display: flex;
+}
+@media all and (max-width: 700px) {
+    .info-bio-container{
+        flex-direction: column;
+    }
 }
 
 .mini-title {

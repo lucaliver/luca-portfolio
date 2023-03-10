@@ -1,4 +1,4 @@
-button {                        /* Button is an element selector */
+button {
     padding: 10px 15px;
     margin: 4px;
     cursor: pointer;
@@ -10,7 +10,7 @@ button {                        /* Button is an element selector */
     margin-bottom: 20px;
 }
 
-.yt {                           /* This is a class selector */
+.yt {
     background-color: #ff0000;
     color: white;
     border: none;
@@ -18,7 +18,7 @@ button {                        /* Button is an element selector */
     font-weight: bold;
     transition: opacity 0.7s ease;
 }
-.yt:hover {                     /* This is a pseudo-class*/
+.yt:hover {
     opacity: 0.4;
 }
 .yt:active {
@@ -27,11 +27,11 @@ button {                        /* Button is an element selector */
 
 .follow {
     background-color: white;
-    border-color: var(--follow-color);
+    border-color: gray;
     border-style: solid;
     border-width: 1.5px;
     border-radius: 4px;
-    color: var(--follow-color);
+    color: gray;
     font-weight: bold;
     cursor: pointer;
     transition: background-color var(--seconds-animation) ease,
@@ -39,7 +39,7 @@ button {                        /* Button is an element selector */
     border-color var(--seconds-animation) ease;
 }
 .follow:hover {
-    background-color: var(--follow-color);
+    background-color: gray;
     border-color: white;
     color: white;
 }
@@ -48,7 +48,7 @@ button {                        /* Button is an element selector */
 }
 
 .tweet {
-    background-color: var(--twitter-color);
+    background-color: blue;
     color: white;
     border: none;
     border-radius: 18px;
