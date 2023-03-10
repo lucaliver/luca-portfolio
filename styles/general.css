@@ -1,6 +1,4 @@
-:root {                                 /* Here I can declare variables */
-    --twitter-color: #1DA1F2;
-    --follow-color: rgb(39, 39, 39);
+:root {
     --seconds-animation: 0.4s;
 }
 
@@ -10,31 +8,22 @@ html{
 }
 
 body {font-family: 'Golos Text', sans-serif;
-    font-size: medium; 
+    font-size: small; 
     margin: 0;
 }
 
-.my-link {
-    color: rgb(0, 0, 167);
-    text-decoration: none;
-    transition: color var(--seconds-animation) ease,
-    text-decoration var(--seconds-animation) ease;
-}
-.my-link:hover {
-    color: rgb(205, 134, 3);
-    text-decoration: underline;
-}
-
-.my-title {
+.wip-warning {
+    background-color: rgb(227, 65, 64);
+    color: white;
+    padding: 10px;
+    margin-bottom: 15px;
     text-align: center;
-    font-size: 50px;
-    margin-top: 50px;
-    margin-bottom: 10px;
+    font-size: 20px;
 
-    transition: color 0.7s ease-in;
+    transition: background-color 1s ease-out;
 }
-.my-title:hover {
-    color: #d197da;
+.wip-warning:hover {
+    background-color: rgb(193, 26, 26);
 }
 
 .cool-title {
@@ -44,7 +33,7 @@ body {font-family: 'Golos Text', sans-serif;
     max-height: 90vh;
     max-width: 90vw;
     font-weight: 950;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     margin-left: auto;
     margin-right: auto;
     background: linear-gradient(to right, #07b8e4, #ad06c0);
@@ -63,25 +52,25 @@ body {font-family: 'Golos Text', sans-serif;
     }
 }
 
+.section-title {
+    color: #9bdeef;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+
+    transition: color 0.7s ease-in;
+}
+.section-title:hover {
+    color: #e6b3ed;
+}
+
+
 .subtitle {
     color: gray;
     text-align: center;
     margin-top: 2px;
     margin-bottom: 30px;
-}
-
-.wip-warning {
-    background-color: rgb(227, 65, 64);
-    color: white;
-    padding: 10px;
-    margin-bottom: 15px;
-    text-align: center;
-    font-size: 20px;
-
-    transition: background-color 1s ease-out;
-}
-.wip-warning:hover {
-    background-color: rgb(193, 26, 26);
 }
 
 .feedback {

@@ -1,0 +1,29 @@
+.info {
+    text-align: center;
+}
+
+.bio {
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+
+.mini-title {
+    margin-top: 35px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 25px;
+    color: #88d9ed;
+}
+
+.uni-subtitle {
+    color: gray;
+}
+
+.my-photo {
+    height: 180px;
+    border-radius: 90px;
+}
+
+.lang-icon {
+    width: 100px;
+}

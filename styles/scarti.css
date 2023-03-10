@@ -1,0 +1,10 @@
+.my-link {
+    color: rgb(0, 0, 167);
+    text-decoration: none;
+    transition: color var(--seconds-animation) ease,
+    text-decoration var(--seconds-animation) ease;
+}
+.my-link:hover {
+    color: rgb(205, 134, 3);
+    text-decoration: underline;
+}
