@@ -66,6 +66,8 @@ body {font-family: 'Golos Text', sans-serif;
     color: #9bdeef;
     text-align: center;
     font-size: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
     margin-top: 50px;
     margin-bottom: 10px;
 
@@ -77,6 +79,7 @@ body {font-family: 'Golos Text', sans-serif;
 
 .section-title-first {
     text-align: left;
+    margin-top: 20px;
 }
 
 .my-body {

@@ -7,12 +7,15 @@
     min-width: 30vw;
     padding: 0px 40px;
     max-width: 500px;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .info-bio-container {
     display: flex;
+    margin-bottom: 60px;
 }
-@media all and (max-width: 700px) {
+@media (max-width: 700px) {
     .info-bio-container{
         flex-direction: column;
     }
@@ -31,8 +34,8 @@
 }
 
 .my-photo {
-    height: 180px;
-    border-radius: 90px;
+    height: max(180px,20vw);
+    border-radius: 50%;
 }
 
 .lang-icon {
