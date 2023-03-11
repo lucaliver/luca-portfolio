@@ -13,11 +13,12 @@
 
 .info-bio-container {
     display: flex;
+    flex-direction: column;
     margin-bottom: 60px;
 }
-@media (max-width: 700px) {
+@media (min-width: 768px) {
     .info-bio-container{
-        flex-direction: column;
+        flex-direction: row;
     }
 }
 
@@ -34,7 +35,7 @@
 }
 
 .my-photo {
-    height: max(180px,20vw);
+    height: max(200px,18vw);
     border-radius: 50%;
 }
 

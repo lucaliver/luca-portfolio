@@ -88,6 +88,6 @@ body {font-family: 'Golos Text', sans-serif;
 }
 
 .cupcake-ipsum {
-    margin-left: 20px;
-    margin-right: 20px;
+    text-align: justify;
+    text-justify: inter-word;
 }
