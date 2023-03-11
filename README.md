@@ -1,3 +1,3 @@
-# Luca Portfolio repository
+# My portfolio website
 
-<a href="https://luca-liver-portfolio.netlify.app/">Here you can find my portfolio deployed.</a>
+<a href="https://luca-liver.netlify.app/">Here is my portfolio.</a>
