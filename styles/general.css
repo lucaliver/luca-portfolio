@@ -7,7 +7,8 @@ html{
     scroll-padding-top: 70px;
 }
 
-body {font-family: 'Golos Text', sans-serif;
+body {
+    font-family: 'Golos Text', sans-serif;
     font-size: small; 
     margin: 0;
     background-color: #121212;
@@ -20,7 +21,7 @@ body {font-family: 'Golos Text', sans-serif;
     padding: 10px;
     margin-bottom: 15px;
     text-align: center;
-
+    
     transition: background-color 1s ease-out;
 }
 .wip-warning:hover {
@@ -62,7 +63,7 @@ body {font-family: 'Golos Text', sans-serif;
     animation: fade 1.2s ease-in;
 }
 
-.section-title {
+.title {
     color: #9bdeef;
     text-align: center;
     font-size: 50px;
@@ -70,19 +71,19 @@ body {font-family: 'Golos Text', sans-serif;
     margin-right: 0px;
     margin-top: 50px;
     margin-bottom: 10px;
-
+    
     transition: color 0.7s ease-in-out;
 }
-.section-title:hover {
+.title:hover {
     color: #e5baf1;
 }
 
-.section-title-first {
+.title-first {
     text-align: left;
     margin-top: 20px;
 }
 
-.my-body {
+.main {
     margin-left: 10vw;
     margin-right: 10vw;
 }
